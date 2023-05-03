@@ -4,7 +4,7 @@
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
 
-
+'use strict'
 // This program will check your age and tell you whether or not you can watch certain movies
 
 function checkAge() {

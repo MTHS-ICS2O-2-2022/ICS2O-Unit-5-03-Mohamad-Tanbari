@@ -48,22 +48,24 @@
         <!--Donut picture-->
         <img src="./images/donut.png" alt="Donut" class="donut" />
         <!--Text below header-->
-        <br />
         <div class="page-content-top">
           <h4>Please enter your age below</h4>
         </div>
         <br />
-        <!--Text field-->
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" id="age" />
-          <label class="mdl-textfield__label" for="age">Age</label>
-        </div>
+        <!-- Numeric Textfield with Floating Label -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
+            <label class="mdl-textfield__label" for="age">Age...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
         <br />
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="checkAge()">
-          Calculate
+          Check Age
         </button>
         <br />
         <br />
