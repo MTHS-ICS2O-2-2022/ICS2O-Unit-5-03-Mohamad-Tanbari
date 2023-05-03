@@ -16,7 +16,9 @@ function checkAge() {
     document.getElementById('answer').innerHTML = "You can watch R rated movies alone."
   } else if (age >= 13) {
     document.getElementById('answer').innerHTML = "You can watch PG rated movies alone."
-  } else {
+  } else if (age < 13){
     document.getElementById('answer').innerHTML = "You can watch G rated movies alone."
+  } else {
+    document.getElementById('answer').innerHTML = "Invalid input. Please try again."
   }
 }
